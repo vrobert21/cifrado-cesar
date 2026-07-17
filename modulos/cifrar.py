@@ -5,6 +5,7 @@
 """
 
 from modulos.caracteres import alfabeto_completo
+from modulos.historial import crear_entrada
 
 
 def cifrar(alfabeto, entrada, desplasamiento):
@@ -56,12 +57,14 @@ alfabeto_caracteres = alfabeto_completo
 
 
 def funcion_cifrar():
+    titulo_entrada = "CIFRAR"
     try:
         print("\n--- Cifrar Caracteres ---")
         entrada = str(input("Cifrar: "))
         desplasamiento = int(input("Desplasamiento: "))
         salida = cifrar(alfabeto_caracteres, entrada, desplasamiento)
         print(f"Salida: {salida}\n")
+        crear_entrada(titulo_entrada, entrada, desplasamiento, salida)
 
     except ValueError:
         print("¡ERROR PARAMETRO NO VALIDO!\n")

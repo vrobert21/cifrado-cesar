@@ -5,6 +5,7 @@
 """
 
 from modulos.caracteres import alfabeto_completo
+from modulos.historial import crear_entrada
 
 
 def descifrar(alfabeto, entrada, desplasamiento):
@@ -55,12 +56,14 @@ alfabeto_caracteres = alfabeto_completo
 
 
 def funcion_descifrar():
+    titulo_entrada = "DESCIFRAR"
     try:
         print("\n--- Descifrar Caracteres ---")
         entrada = str(input("Descifrar: "))
         desplasamiento = int(input("Desplasamiento: "))
         salida = descifrar(alfabeto_caracteres, entrada, desplasamiento)
         print(f"Salida: {salida}\n")
+        crear_entrada(titulo_entrada, entrada, desplasamiento, salida)
 
     except ValueError:
         print("¡ERROR PARAMETRO NO VALIDO!\n")
