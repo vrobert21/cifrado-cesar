@@ -1,6 +1,7 @@
 # Archivo principal del programa
 
 from modulos.cifrar import funcion_cifrar
+from modulos.descifrar import funcion_descifrar
 
 
 def main():
@@ -16,11 +17,11 @@ def main():
             case "1":
                 funcion_cifrar()
             case "2":
-                pass
+                funcion_descifrar()
             case "3":
                 break
             case _:
-                print("¡Opcion no valida!")
+                print("-- ¡Opcion no valida! --")
 
 
 if __name__ == "__main__":

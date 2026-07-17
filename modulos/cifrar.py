@@ -1,7 +1,7 @@
 # Modulo de cifrado de caracteres
 
 """
-Este archivo contiene el algoritmo de cifrado.
+-- Este archivo contiene el algoritmo de cifrado. --
 """
 
 from modulos.caracteres import alfabeto_completo
@@ -23,7 +23,8 @@ def cifrar(alfabeto, entrada, desplasamiento):
 
         - Si la posicion es mayor al total de caracteres del alfabeto
             - Le restamos el total de caracteres del alfabeto al la posicion
-              para que quede su equivalente del lado contrario de la lista
+              para que quede su equivalente del lado contrario de la lista y
+              restamos uno para equibrar resultados
             - Y sumamos ese caracter a la variable de salida
 
         - Si el caracter no esta dentro del alfabeto simplemente se suma a la variable de salida
@@ -55,7 +56,12 @@ alfabeto_caracteres = alfabeto_completo
 
 
 def funcion_cifrar():
-    entrada = str(input("\nCifrar: "))
-    desplasamiento = int(input("Desplasamiento: "))
-    salida = cifrar(alfabeto_caracteres, entrada, desplasamiento)
-    print(f"Salida: {salida}\n")
+    try:
+        print("\n--- Cifrar Caracteres ---")
+        entrada = str(input("Cifrar: "))
+        desplasamiento = int(input("Desplasamiento: "))
+        salida = cifrar(alfabeto_caracteres, entrada, desplasamiento)
+        print(f"Salida: {salida}\n")
+
+    except ValueError:
+        print("¡ERROR PARAMETRO NO VALIDO!\n")
