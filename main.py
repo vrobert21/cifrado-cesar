@@ -136,7 +136,7 @@ def main():
             case "4":
                 break
             case _:
-                print("-- ¡Opción no valida! --")
+                print("-- ¡Opción no valida! --\n")
 
 
 if __name__ == "__main__":
