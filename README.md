@@ -44,7 +44,7 @@ Un programa interactivo en Python que implementa el cifrado César con un alfabe
 ### Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/cifrado-cesar.git
+git clone 
 cd cifrado-cesar
 ```
 
@@ -316,6 +316,5 @@ Las contribuciones son bienvenidas.
 
 ![Estado](https://img.shields.io/badge/Estado-En%20Desarrollo-yellow)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
-
 
 ---
