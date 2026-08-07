@@ -1,0 +1,5 @@
+# Omite el archivo de Historial
+/historial_texto.txt
+
+# Omite archivos de importe de modulos
+modulos/__pycache__
