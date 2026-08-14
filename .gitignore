@@ -3,3 +3,8 @@
 
 # Omite archivos de importe de modulos
 modulos/__pycache__
+
+# Archivos generados por pyinstaller
+/dist
+/build
+/main.spec

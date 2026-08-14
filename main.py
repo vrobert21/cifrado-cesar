@@ -1,8 +1,8 @@
 # Archivo principal del programa
 
-from modulos.cifrar import funcion_cifrar  # Importa la función cifrar
-from modulos.descifrar import funcion_descifrar  # Importa la función descifrar
-from modulos.historial import (
+from modules.cifrar import funcion_cifrar  # Importa la función cifrar
+from modules.descifrar import funcion_descifrar  # Importa la función descifrar
+from modules.historial import (
     leer_historial,
 )  # Importa la funnción que muestra el historial
 
@@ -24,7 +24,16 @@ def main():
         print("3. Leer Historial")
         print("4. Terminar Programa\n")
 
-        opcion = input(": ")
+        try:
+            opcion = input(": ")
+
+        except KeyboardInterrupt:  # En caso de que el usuario interrumpa la ejecución
+            print("\n¡Ejecución interrumpida por el usuario!")
+            break
+
+        except UnboundLocalError: # En caso de que el usuario interrumpa la ejecución
+            print("\n¡Ejecución interrumpida por el usuario!")
+            break
 
         match opcion:
             case "1":

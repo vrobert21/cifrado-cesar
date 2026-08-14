@@ -36,4 +36,4 @@ def leer_historial():
             print(f"{entradas}\n")
 
     except FileNotFoundError:
-        print("¡Todavia no hay entradas de historial!\n")
+        print("\n¡Todavia no hay entradas de historial!\n")

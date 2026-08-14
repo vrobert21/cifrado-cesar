@@ -4,9 +4,12 @@
 -- Este archivo contiene el modulo de descifrado. --
 """
 
-from modulos.caracteres import (alfabeto_completo,)  # Importar lista de caracteres personalizados
-from modulos.historial import (crear_entrada,)  # Importar función para crear entradas de historial
-
+from modules.caracteres import (
+    alfabeto_completo,  # Importar lista de caracteres personalizados
+)
+from modules.historial import (
+    crear_entrada,  # Importar función para crear entradas de historial
+)
 
 alfabeto_caracteres = alfabeto_completo  # Variable Global
 
@@ -67,4 +70,10 @@ def funcion_descifrar():
         )  # Agrega una entada al historial.
 
     except ValueError:  # En caro de error
-        print("¡ERROR PARAMETRO NO VALIDO!\n")
+        print("\n¡ERROR PARAMETRO NO VALIDO!\n")
+
+    except KeyboardInterrupt:  # En caso de que el usuario interrumpa la ejecución
+        print("\n¡Ejecución interrumpida por el usuario!\n")
+
+    except UnboundLocalError:  # En caso de que el usuario interrumpa la ejecución
+        print("\n¡Ejecución interrumpida por el usuario!\n")

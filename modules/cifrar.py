@@ -4,13 +4,12 @@
 -- Este archivo contiene el algoritmo de cifrado. --
 """
 
-from modulos.caracteres import (
+from modules.caracteres import (
     alfabeto_completo,
 )  # Importar lista de caracteres personalizados
-from modulos.historial import (
+from modules.historial import (
     crear_entrada,
 )  # Importar función para crear entradas de historial
-
 
 alfabeto_caracteres = alfabeto_completo  # Variable Global
 
@@ -68,4 +67,10 @@ def funcion_cifrar():
         )  # Agrega una entada al historial.
 
     except ValueError:  # En caso de error
-        print("¡ERROR PARAMETRO NO VALIDO!\n")
+        print("\n¡ERROR PARAMETRO NO VALIDO!\n")
+
+    except KeyboardInterrupt:  # En caso de que el usuario interrumpa la ejecución
+        print("\n¡Ejecución interrumpida por el usuario!\n")
+
+    except UnboundLocalError:  # En caso de que el usuario interrumpa la ejecución
+        print("\n¡Ejecución interrumpida por el usuario!\n")
