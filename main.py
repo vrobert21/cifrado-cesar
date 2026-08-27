@@ -1,8 +1,8 @@
 # Archivo principal del programa
 
-from modules.cifrar import funcion_cifrar  # Importa la función cifrar
-from modules.descifrar import funcion_descifrar  # Importa la función descifrar
-from modules.historial import (
+from modulos.cifrar import funcion_cifrar  # Importa la función cifrar
+from modulos.descifrar import funcion_descifrar  # Importa la función descifrar
+from modulos.historial import (
     leer_historial,
 )  # Importa la funnción que muestra el historial
 

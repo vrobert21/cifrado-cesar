@@ -4,10 +4,10 @@
 -- Este archivo contiene el modulo de descifrado. --
 """
 
-from modules.caracteres import (
+from modulos.caracteres import (
     alfabeto_completo,  # Importar lista de caracteres personalizados
 )
-from modules.historial import (
+from modulos.historial import (
     crear_entrada,  # Importar función para crear entradas de historial
 )
 
