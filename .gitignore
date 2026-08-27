@@ -1,8 +1,8 @@
 # Omite el archivo de Historial
 /historial_texto.txt
 
-# Omite archivos de importe de modulos
-modules/__pycache__
+# Omite los archivos de importación de modulos
+modulos/__pycache__
 
 # Archivos generados por pyinstaller
 /dist
